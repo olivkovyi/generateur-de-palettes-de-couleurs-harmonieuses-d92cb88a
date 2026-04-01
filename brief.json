@@ -1,0 +1,283 @@
+{
+  "run_id": "run-1775077159341",
+  "job_index": 2,
+  "params": {
+    "owner_user_id": "user-1774822953462",
+    "owner_username": "admin",
+    "owner_display_name": "Administrator",
+    "count": 2,
+    "archetype": "generator",
+    "market": "France",
+    "language": "fr",
+    "country": "FR",
+    "brief": "Cet outil aide les designers, marketeurs et entrepreneurs à choisir des combinaisons de couleurs qui renforce…",
+    "notes": "Créez des palettes de couleurs professionnelles et attrayantes pour votre identité de marque, vos supports marketing ou vos projets web, basées sur des principes de théorie des couleurs.\nInspiré par les palettes de couleurs naturelles et artistiques. Offre des options pour ajuster la saturation, la luminosité et les proportions.",
+    "import_notes": "",
+    "mode": "production",
+    "run_kind": "generated_batch",
+    "publish_target": "render",
+    "requested_publish_target": "render",
+    "github_repo_private": true,
+    "stage_models": {
+      "ideation": "google/gemini-2.5-flash-lite:nitro",
+      "spec": "google/gemini-2.5-flash",
+      "copy": "google/gemini-2.5-flash-lite:nitro",
+      "qa": "anthropic/claude-haiku-4.5",
+      "escalation": "anthropic/claude-sonnet-4.6"
+    },
+    "archetype_display": "mixed batch",
+    "archetype_mix": [
+      "calculator",
+      "generator"
+    ],
+    "forced_design_theme": "playful-modular",
+    "forced_structure_preset": "bento-signal",
+    "site_idea_title": "Générateur de Palettes de Couleurs Harmonieuses pour Marca",
+    "site_idea_summary": "Créez des palettes de couleurs professionnelles et attrayantes pour votre identité de marque, vos supports marketing ou vos projets web, basées sur des principes de théorie des couleurs."
+  },
+  "site_spec": {
+    "slug": "generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
+    "theme": {
+      "name": "Playful Modular",
+      "slug": "playful-modular",
+      "eyebrow": "Friendly Utility",
+      "family": "playful-modular",
+      "moods": [
+        "friendly",
+        "playful",
+        "modular",
+        "bright"
+      ],
+      "archetypes": [
+        "generator",
+        "tool"
+      ],
+      "niches": [
+        "education",
+        "productivity",
+        "content tools",
+        "family tools",
+        "simple utilities"
+      ],
+      "keywords": [
+        "friendly",
+        "cards",
+        "modular",
+        "creative",
+        "simple"
+      ],
+      "token_index": [
+        "bright",
+        "cards",
+        "content",
+        "creative",
+        "education",
+        "family",
+        "friendly",
+        "generator",
+        "modular",
+        "playful",
+        "productivity",
+        "simple",
+        "tool",
+        "tools",
+        "utilities",
+        "utility"
+      ],
+      "font_embed": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+      "display_font": "\"Outfit\", sans-serif",
+      "body_font": "\"IBM Plex Sans\", sans-serif",
+      "layout": "showcase",
+      "card_style": "glass",
+      "button_style": "gradient",
+      "decor_style": "orbs",
+      "hero_template": "0.94fr 1.06fr",
+      "seo_template": "1.18fr 0.82fr",
+      "feature_columns": 2,
+      "faq_columns": 3,
+      "hero_min_height": "78vh",
+      "panel_radius": "34px",
+      "card_radius": "26px",
+      "chip_radius": "999px",
+      "button_radius": "18px",
+      "outline_width": "1px",
+      "backdrop_blur": "16px",
+      "palette": {
+        "bg": "linear-gradient(140deg, #f8fafc 0%, #dbeafe 45%, #fef3c7 100%)",
+        "surface": "rgba(255,255,255,0.9)",
+        "surface_border": "rgba(37,99,235,0.12)",
+        "text": "#172554",
+        "muted": "#475569",
+        "accent": "#2563eb",
+        "accent_alt": "#f97316",
+        "hero_glow": "rgba(37, 99, 235, 0.12)",
+        "button_text": "#f8fafc",
+        "panel_alt": "rgba(255,255,255,0.72)",
+        "shadow": "0 22px 60px rgba(37, 99, 235, 0.08)",
+        "input_fill": "rgba(255,255,255,0.52)"
+      }
+    },
+    "structure": {
+      "name": "Bento Signal",
+      "slug": "bento-signal",
+      "hero_variant": "command",
+      "proof_variant": "badges",
+      "section_order": [
+        "proof",
+        "features",
+        "seo",
+        "faq"
+      ],
+      "feature_columns": 4,
+      "faq_columns": 2,
+      "family": "modular-grid",
+      "moods": [
+        "modular",
+        "curated",
+        "technical"
+      ],
+      "archetypes": [
+        "tool",
+        "generator",
+        "calculator"
+      ],
+      "niches": [
+        "ai tools",
+        "dashboards",
+        "productivity",
+        "research"
+      ],
+      "keywords": [
+        "bento",
+        "cards",
+        "signal",
+        "system"
+      ],
+      "token_index": [
+        "badges",
+        "bento",
+        "calculator",
+        "cards",
+        "command",
+        "curated",
+        "dashboards",
+        "faq",
+        "features",
+        "generator",
+        "grid",
+        "modular",
+        "productivity",
+        "proof",
+        "research",
+        "seo",
+        "signal",
+        "system",
+        "technical",
+        "tool",
+        "tools"
+      ]
+    },
+    "render_direction": "signal-bento",
+    "render_direction_name": "Signal Bento",
+    "page_blueprint": "signal-matrix",
+    "page_blueprint_name": "Signal Matrix",
+    "title": "Générateur de Palettes de Couleurs Harmonieuses pour Marque",
+    "tagline": "Composez Votre Harmonie",
+    "description": "Créez des palettes de couleurs professionnelles et attrayantes pour votre identité de marque, vos supports marketing ou vos projets web, basées sur des principes de théorie des couleurs.",
+    "feature_prefix": "Bloc",
+    "action": "Générer la palette",
+    "cta_primary": "Générer la Palette",
+    "cta_secondary": "Consulter la FAQ",
+    "inputs": [
+      {
+        "id": "base_color",
+        "label": "Couleur de base",
+        "type": "text",
+        "placeholder": "#ff5db1",
+        "weight": 1.0
+      },
+      {
+        "id": "palette_style",
+        "label": "Direction de palette",
+        "type": "select",
+        "options": [
+          {
+            "id": "chrome-pop",
+            "label": "Chrome Pop",
+            "multiplier": 1
+          },
+          {
+            "id": "digital-candy",
+            "label": "Digital Candy",
+            "multiplier": 1
+          },
+          {
+            "id": "acid-pastel",
+            "label": "Acid Pastel",
+            "multiplier": 1
+          },
+          {
+            "id": "night-neon",
+            "label": "Night Neon",
+            "multiplier": 1
+          }
+        ],
+        "weight": 1.0
+      },
+      {
+        "id": "vibrancy",
+        "label": "Intensité visuelle",
+        "type": "number",
+        "placeholder": "8",
+        "weight": 0.5
+      }
+    ],
+    "hero_metrics": [
+      {
+        "value": "Signal Bento",
+        "label": "Cadence"
+      },
+      {
+        "value": "3",
+        "label": "Entrées"
+      },
+      {
+        "value": "Palette générée",
+        "label": "Sortie"
+      }
+    ],
+    "trust_labels": [
+      "Signal Bento",
+      "Générer la Palette",
+      "Palette générée",
+      "Utilitaire immédiat",
+      "Structure SEO claire"
+    ],
+    "result_label": "Palette générée",
+    "result_unit": "",
+    "runtime_mode": "palette_generator",
+    "page_variant": "console",
+    "faq_topic": "Générateur de Palettes de Couleurs Harmonieuses pour Marca",
+    "faq_entries": [
+      {
+        "question": "Pourquoi utiliser cet outil pour Générateur de Palettes de Couleurs Harmonieuses pour Marca ?",
+        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
+      },
+      {
+        "question": "Le résultat est-il immédiat ?",
+        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
+      },
+      {
+        "question": "Cette page est-elle adaptée au SEO ?",
+        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
+      }
+    ],
+    "seo_paragraphs": [
+      "Cette page capte une intention forte autour de Générateur de Palettes de Couleurs Harmonieuses pour Marca et la transforme en action utile pour un public situé sur France.",
+      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
+      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
+    ],
+    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Générateur de Palettes de Couleurs Harmonieuses pour Marque | Composez Votre Harmonie</title>\n    <meta name=\"description\" content=\"Créez des palettes de couleurs professionnelles et attrayantes pour votre identité de marque, vos supports marketing ou vos projets web, basées sur des principes de théorie des couleurs.\">\n    <style>\n        :root {\n            --color-primary: #8C52FF;\n            --color-secondary: #00CBAA;\n            --color-neutral-100: #F0F2F5;\n            --color-neutral-200: #E0E4EB;\n            --color-neutral-300: #C2C8D1;\n            --color-neutral-700: #333842;\n            --color-neutral-900: #1C2025;\n            --font-family-display: \"Poppins\", sans-serif;\n            --font-family-body: \"Inter\", sans-serif;\n            --gradient-card: linear-gradient(145deg, #ffffff, #f0f2f5);\n            --shadow-card: 8px 8px 16px rgba(0, 0, 0, 0.05), -8px -8px 16px rgba(255, 255, 255, 0.8);\n            --shadow-inner: inset 2px 2px 5px rgba(0, 0, 0, 0.08), inset -2px -2px 5px rgba(255, 255, 255, 0.8);\n        }\n\n        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700&display=swap');\n\n        body {\n            font-family: var(--font-family-body);\n            color: var(--color-neutral-900);\n            line-height: 1.6;\n            margin: 0;\n            background-color: var(--color-neutral-100);\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            padding: 20px;\n            box-sizing: border-box;\n        }\n\n        h1, h2, h3 {\n            font-family: var(--font-family-display);\n            color: var(--color-neutral-900);\n            margin-top: 0;\n        }\n\n        header {\n            text-align: center;\n            margin-bottom: 40px;\n            max-width: 800px;\n        }\n\n        header h1 {\n            font-size: 2.8em;\n            margin-bottom: 15px;\n            background: -webkit-linear-gradient(45deg, var(--color-primary), var(--color-secondary));\n            -webkit-background-clip: text;\n            -webkit-text-fill-color: transparent;\n        }\n\n        header p {\n            font-size: 1.1em;\n            color: var(--color-neutral-700);\n            max-width: 700px;\n            margin: 0 auto;\n        }\n\n        .container {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n            gap: 25px;\n            max-width: 1200px;\n            width: 100%;\n            margin-bottom: 40px;\n        }\n\n        .card {\n            background: var(--gradient-card);\n            border-radius: 20px;\n            padding: 30px;\n            box-shadow: var(--shadow-card);\n            transition: all 0.3s ease;\n        }\n\n        .card:hover {\n            transform: translateY(-5px);\n            box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.08), -12px -12px 24px rgba(255, 255, 255, 0.8);\n        }\n\n        .card h2 {\n            font-size: 1.8em;\n            margin-bottom: 15px;\n            color: var(--color-primary);\n        }\n        \n        .card h3 {\n            font-size: 1.4em;\n            margin-top: 25px;\n            margin-bottom: 15px;\n            color: var(--color-neutral-900);\n        }\n\n        .form-group {\n            margin-bottom: 20px;\n        }\n\n        label {\n            display: block;\n            margin-bottom: 8px;\n            font-weight: 500;\n            color: var(--color-neutral-700);\n        }\n\n        input[type=\"text\"],\n        input[type=\"range\"],\n        select {\n            width: 100%;\n            padding: 12px 15px;\n            border: none;\n            border-radius: 12px;\n            background-color: var(--color-neutral-100);\n            box-shadow: var(--shadow-inner);\n            font-size: 1em;\n            color: var(--color-neutral-900);\n            box-sizing: border-box;\n        }\n\n        input[type=\"range\"] {\n            padding: 0;\n            height: 10px;\n            -webkit-appearance: none;\n            appearance: none;\n            background: var(--color-neutral-200);\n            outline: none;\n            opacity: 0.7;\n            transition: opacity .2s;\n            margin-top: 10px;\n        }\n\n        input[type=\"range\"]::-webkit-slider-thumb {\n            -webkit-appearance: none;\n            appearance: none;\n            width: 20px;\n            height: 20px;\n            border-radius: 50%;\n            background: var(--color-primary);\n            cursor: pointer;\n            box-shadow: 0 0 5px rgba(0,0,0,0.2);\n        }\n\n        button {\n            background: var(--color-primary);\n            color: white;\n            padding: 15px 30px;\n            border: none;\n            border-radius: 12px;\n            font-size: 1.1em;\n            font-weight: 600;\n            cursor: pointer;\n            transition: background-color 0.3s ease, transform 0.2s ease;\n            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n            width: 100%;\n        }\n\n        button:hover {\n            background-color: var(--color-secondary);\n            transform: translateY(-2px);\n        }\n\n        #tool-result {\n            margin-top: 30px;\n            min-height: 100px;\n            background: var(--gradient-card);\n            border-radius: 20px;\n            padding: 30px;\n            box-shadow: var(--shadow-card);\n            word-break: break-word;\n        }\n\n        .palette-item {\n            display: flex;\n            align-items: center;\n            margin-bottom: 10px;\n        }\n\n        .color-box {\n            width: 40px;\n            height: 40px;\n            border-radius: 8px;\n            margin-right: 15px;\n            border: 1px solid rgba(0,0,0,0.1);\n        }\n\n        .color-info {\n            display: flex;\n            flex-direction: column;\n        }\n\n        .color-info span {\n            font-weight: 500;\n        }\n\n        .color-info small {\n            font-size: 0.85em;\n            color: var(--color-neutral-700);\n        }\n\n        .seo-section {\n            max-width: 900px;\n            margin-top: 60px;\n            padding: 40px;\n            background: var(--gradient-card);\n            border-radius: 20px;\n            box-shadow: var(--shadow-card);\n        }\n\n        .seo-section h2 {\n            text-align: center;\n            margin-bottom: 30px;\n            color: var(--color-primary);\n        }\n\n        .seo-section ul {\n            list-style: none;\n            padding: 0;\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n            gap: 15px;\n        }\n\n        .seo-section li {\n            background-color: var(--color-neutral-100);\n            padding: 15px;\n            border-radius: 10px;\n            box-shadow: var(--shadow-inner);\n            font-size: 0.95em;\n            color: var(--color-neutral-700);\n        }\n\n        footer {\n            margin-top: 50px;\n            text-align: center;\n            color: var(--color-neutral-700);\n            font-size: 0.9em;\n            padding-bottom: 20px;\n        }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a.onrender.com\">\n    <meta property=\"og:title\" content=\"Générateur de Palettes de Couleurs Harmonieuses pour Marque\">\n    <meta property=\"og:description\" content=\"Créez des palettes de couleurs professionnelles et attrayantes pour votre identité de marque, vos supports marketing ou vos projets web, basées sur des principes de théorie des couleurs.\">\n    <meta property=\"og:url\" content=\"https://generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Générateur de Palettes de Couleurs Harmonieuses pour Marque\", \"description\": \"Créez des palettes de couleurs professionnelles et attrayantes pour votre identité de marque, vos supports marketing ou vos projets web, basées sur des principes de théorie des couleurs.\", \"url\": \"https://generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a\" data-runtime-mode=\"palette_generator\">\n    <header>\n        <h1>Générateur de Palettes de Couleurs Harmonieuses pour Marque</h1>\n        <p>Cet outil aide les designers, marketeurs et entrepreneurs à choisir des combinaisons de couleurs qui renforcent leur identité visuelle. Créez des palettes professionnelles et attrayantes, basées sur des principes de théorie des couleurs, inspirées par la nature et l'art.</p>\n    </header>\n\n    <div class=\"container\">\n        <div class=\"card\">\n            <h2>Composez Votre Harmonie</h2>\n            <p>Définissez le point de départ de votre palette. Un simple clic et observez la magie opérer pour révéler des combinaisons uniques.</p>\n            <form id=\"tool-form\">\n                <div class=\"form-group\">\n                    <label for=\"baseColor\">Couleur de Base (Hex ou Nom)</label>\n                    <input type=\"text\" id=\"baseColor\" value=\"#8C52FF\" placeholder=\"#RRGGBB ou 'Bleu'\" required>\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"harmonyType\">Type d'Harmonie</label>\n                    <select id=\"harmonyType\">\n                        <option value=\"analogous\">Analogues</option>\n                        <option value=\"monochromatic\">Monochromatique</option>\n                        <option value=\"complementary\">Complémentaire</option>\n                        <option value=\"triadic\">Triadique</option>\n                        <option value=\"split-complementary\">Complémentaire scindée</option>\n                    </select>\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"saturation\">Saturation (%) <span id=\"saturationValue\">50</span></label>\n                    <input type=\"range\" id=\"saturation\" min=\"0\" max=\"100\" value=\"50\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"lightness\">Luminosité (%) <span id=\"lightnessValue\">50</span></label>\n                    <input type=\"range\" id=\"lightness\" min=\"0\" max=\"100\" value=\"50\">\n                </div>\n                <button type=\"submit\" id=\"tool-submit\" data-affiliate-slot=\"generate_palette\">Générer la Palette</button>\n            </form>\n        </div>\n\n        <div class=\"card\">\n            <h2>Votre Palette Réinventée</h2>\n            <p>Visualisez instantanément des combinaisons chromatiques pertinentes pour votre projet. Adaptez, peaufinez, et laissez votre créativité s'exprimer.</p>\n            <div id=\"tool-result\">\n                <h3 id=\"result-headline\">Palette Générée</h3>\n                <p>Cliquez sur \"Générer la Palette\" pour découvrir vos couleurs.</p>\n            </div>\n        </div>\n    </div>\n\n    <section class=\"seo-section\">\n        <h2>Recherches Fréquentes pour vos Palettes</h2>\n        <ul>\n            <li>Trouver la meilleure palette de couleurs pour un site web en France</li>\n            <li>Comment créer une harmonie de couleurs pour ma marque ?</li>\n            <li>Outil gratuit de génération de couleurs complémentaires</li>\n            <li>Principes de la théorie des couleurs pour le marketing</li>\n            <li>Exemples de palettes de couleurs naturelles et artistiques</li>\n            <li>Choisir des couleurs qui renforcent l'identité visuelle</li>\n            <li>Logiciel de création de thèmes de couleurs modernes</li>\n            <li>Idées de combinaisons de couleurs pour logo d'entreprise</li>\n            <li>Signification des couleurs dans le design graphique français</li>\n            <li>Générateur de codes couleurs hexadécimaux et RVB</li>\n        </ul>\n    </section>\n\n    <footer>\n        © 2023 Harmonie Créative. Tous droits réservés.\n    </footer>\n\n    <script>\n        function hexToRgb(hex) {\n            var r = parseInt(hex.substring(1, 3), 16);\n            var g = parseInt(hex.substring(3, 5), 16);\n            var b = parseInt(hex.substring(5, 7), 16);\n            return { r, g, b };\n        }\n\n        function rgbToHsl(r, g, b) {\n            r /= 255; g /= 255; b /= 255;\n            var max = Math.max(r, g, b), min = Math.min(r, g, b);\n            var h, s, l = (max + min) / 2;\n\n            if (max === min) {\n                h = s = 0; // achromatic\n            } else {\n                var d = max - min;\n                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);\n                switch (max) {\n                    case r: h = (g - b) / d + (g < b ? 6 : 0); break;\n                    case g: h = (b - r) / d + 2; break;\n                    case b: h = (r - g) / d + 4; break;\n                }\n                h /= 6;\n            }\n            return { h: h * 360, s: s * 100, l: l * 100 };\n        }\n\n        function hslToRgb(h, s, l) {\n            s /= 100;\n            l /= 100;\n            var c = (1 - Math.abs(2 * l - 1)) * s,\n                x = c * (1 - Math.abs((h / 60) % 2 - 1)),\n                m = l - c / 2,\n                r = 0,\n                g = 0,\n                b = 0;\n\n            if (0 <= h && h < 60) {\n                r = c; g = x; b = 0;\n            } else if (60 <= h && h < 120) {\n                r = x; g = c; b = 0;\n            } else if (120 <= h && h < 180) {\n                r = 0; g = c; b = x;\n            } else if (180 <= h && h < 240) {\n                r = 0; g = x; b = c;\n            } else if (240 <= h && h < 300) {\n                r = x; g = 0; b = c;\n            } else if (300 <= h && h < 360) {\n                r = c; g = 0; b = x;\n            }\n            r = Math.round((r + m) * 255);\n            g = Math.round((g + m) * 255);\n            b = Math.round((b + m) * 255);\n\n            return { r, g, b };\n        }\n\n        function rgbToHex(r, g, b) {\n            return \"#\" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();\n        }\n\n        // Basic color name to hex mapping (can be expanded)\n        const colorNames = {\n            \"rouge\": \"#FF0000\", \"vert\": \"#00FF00\", \"bleu\": \"#0000FF\", \"jaune\": \"#FFFF00\",\n            \"cyan\": \"#00FFFF\", \"magenta\": \"#FF00FF\", \"blanc\": \"#FFFFFF\", \"noir\": \"#000000\",\n            \"orange\": \"#FFA500\", \"violet\": \"#800080\", \"rose\": \"#FFC0CB\", \"marron\": \"#A52A2A\",\n            \"gris\": \"#808080\"\n        };\n\n        function getColorFromInput(input) {\n            let color = input.trim();\n            if (color.startsWith(\"#\") && color.length === 7) {\n                return hexToRgb(color);\n            } else if (colorNames[color.toLowerCase()]) {\n                return hexToRgb(colorNames[color.toLowerCase()]);\n            }\n            // Default to a safe color if invalid or unknown\n            return { r: 140, g: 82, b: 255 }; // Default to primary color hex #8C52FF\n        }\n\n        function generatePalette(baseColorRgb, type, saturation, lightness) {\n            let { h, s, l } = rgbToHsl(baseColorRgb.r, baseColorRgb.g, baseColorRgb.b);\n            let colors = [];\n\n            // Apply global saturation and lightness adjustments from sliders\n            s = saturation;\n            l = lightness;\n\n            const baseHsl = { h, s, l };\n            colors.push(baseHsl);\n\n            switch (type) {\n                case 'monochromatic':\n                    // Variations in lightness\n                    colors.push({ h: h, s: s, l: Math.max(0, l - 20) });\n                    colors.push({ h: h, s: s, l: Math.min(100, l + 20) });\n                    colors.push({ h: h, s: Math.max(0, s - 20), l: l }); // Desaturated\n                    colors.push({ h: h, s: Math.min(100, s + 20), l: l }); // More saturated\n                    break;\n                case 'analogous':\n                    colors.push({ h: (h + 30) % 360, s: s, l: l });\n                    colors.push({ h: (h - 30 + 360) % 360, s: s, l: l });\n                    colors.push({ h: (h + 60) % 360, s: s, l: Math.min(100, l + 10) });\n                    colors.push({ h: (h - 60 + 360) % 360, s: s, l: Math.max(0, l - 10) });\n                    break;\n                case 'complementary':\n                    colors.push({ h: (h + 180) % 360, s: s, l: l });\n                    colors.push({ h: h, s: s, l: Math.max(0, l - 20) });\n                    colors.push({ h: (h + 180) % 360, s: s, l: Math.min(100, l + 20) });\n                    colors.push({ h: h, s: Math.min(100, s + 20), l: l });\n                    break;\n                case 'triadic':\n                    colors.push({ h: (h + 120) % 360, s: s, l: l });\n                    colors.push({ h: (h + 240) % 360, s: s, l: l });\n                    colors.push({ h: h, s: Math.max(0, s - 15), l: Math.min(100, l + 15) }); // Variation\n                    colors.push({ h: (h + 120) % 360, s: s, l: Math.max(0, l - 15) }); // Variation\n                    break;\n                case 'split-complementary':\n                    colors.push({ h: (h + 150) % 360, s: s, l: l });\n                    colors.push({ h: (h + 210) % 360, s: s, l: l });\n                    colors.push({ h: h, s: Math.min(100, s + 10), l: l });\n                    colors.push({ h: (h + 150) % 360, s: s, l: Math.max(0, l - 10) });\n                    break;\n            }\n\n            // Ensure unique colors and convert back to RGB then Hex\n            const uniqueColors = Array.from(new Set(colors.map(c => JSON.stringify(c))))\n                                    .map(s => JSON.parse(s));\n\n            return uniqueColors.slice(0, 5).map(c => { // Limit to 5 colors for a compact palette\n                const { r, g, b } = hslToRgb(c.h, c.s, c.l);\n                return {\n                    hex: rgbToHex(r, g, b),\n                    rgb: `rgb(${r}, ${g}, ${b})`,\n                    hsl: `hsl(${Math.round(c.h)}, ${Math.round(c.s)}%, ${Math.round(c.l)}%)`\n                };\n            });\n        }\n\n\n        document.getElementById('tool-form').addEventListener('submit', function(event) {\n            event.preventDefault();\n\n            const baseColorInput = document.getElementById('baseColor').value;\n            const harmonyType = document.getElementById('harmonyType').value;\n            const saturation = parseInt(document.getElementById('saturation').value);\n            const lightness = parseInt(document.getElementById('lightness').value);\n\n            const baseRgb = getColorFromInput(baseColorInput);\n            const palette = generatePalette(baseRgb, harmonyType, saturation, lightness);\n\n            const resultDiv = document.getElementById('tool-result');\n            let html = '<h3>Votre Palette Personnalisée</h3>';\n            palette.forEach(color => {\n                html += `\n                    <div class=\"palette-item\">\n                        <div class=\"color-box\" style=\"background-color: ${color.hex};\"></div>\n                        <div class=\"color-info\">\n                            <span>${color.hex}</span>\n                            <small>${color.rgb} / ${color.hsl}</small>\n                        </div>\n                    </div>\n                `;\n            });\n            resultDiv.innerHTML = html;\n        });\n\n        // Update slider values\n        document.getElementById('saturation').addEventListener('input', function() {\n            document.getElementById('saturationValue').textContent = this.value;\n        });\n        document.getElementById('lightness').addEventListener('input', function() {\n            document.getElementById('lightnessValue').textContent = this.value;\n        });\n\n        // Initial generation on load\n        document.addEventListener('DOMContentLoaded', function() {\n            document.getElementById('tool-submit').click();\n        });\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.setAttribute(\"rel\", \"nofollow sponsored noopener noreferrer\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\", \"noopener\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (tag === \"select\") {\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      field.value = sampleNumber(field);\n      return;\n    }\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    const blocker = function (event) {\n      event.preventDefault();\n    };\n    form.addEventListener(\"submit\", blocker, { capture: true, once: true });\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n    inspectResult(before, 6);\n  }\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
+    "generation_mode": "direct_html"
+  }
+}
