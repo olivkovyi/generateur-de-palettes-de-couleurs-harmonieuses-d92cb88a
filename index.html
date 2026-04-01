@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Palettes de Couleurs Harmonieuses pour Marque | Composez Votre Harmonie</title>
+    <meta name="description" content="Créez des palettes de couleurs professionnelles et attrayantes pour votre identité de marque, vos supports marketing ou vos projets web, basées sur des principes de théorie des couleurs.">
+    <style>
+        :root {
+            --color-primary: #8C52FF;
+            --color-secondary: #00CBAA;
+            --color-neutral-100: #F0F2F5;
+            --color-neutral-200: #E0E4EB;
+            --color-neutral-300: #C2C8D1;
+            --color-neutral-700: #333842;
+            --color-neutral-900: #1C2025;
+            --font-family-display: "Poppins", sans-serif;
+            --font-family-body: "Inter", sans-serif;
+            --gradient-card: linear-gradient(145deg, #ffffff, #f0f2f5);
+            --shadow-card: 8px 8px 16px rgba(0, 0, 0, 0.05), -8px -8px 16px rgba(255, 255, 255, 0.8);
+            --shadow-inner: inset 2px 2px 5px rgba(0, 0, 0, 0.08), inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700&display=swap');
+
+        body {
+            font-family: var(--font-family-body);
+            color: var(--color-neutral-900);
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--color-neutral-100);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-family-display);
+            color: var(--color-neutral-900);
+            margin-top: 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            background: -webkit-linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: var(--color-neutral-700);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--gradient-card);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--shadow-card);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.08), -12px -12px 24px rgba(255, 255, 255, 0.8);
+        }
+
+        .card h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: var(--color-primary);
+        }
+        
+        .card h3 {
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: var(--color-neutral-900);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+        }
+
+        input[type="text"],
+        input[type="range"],
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 12px;
+            background-color: var(--color-neutral-100);
+            box-shadow: var(--shadow-inner);
+            font-size: 1em;
+            color: var(--color-neutral-900);
+            box-sizing: border-box;
+        }
+
+        input[type="range"] {
+            padding: 0;
+            height: 10px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: var(--color-neutral-200);
+            outline: none;
+            opacity: 0.7;
+            transition: opacity .2s;
+            margin-top: 10px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        button {
+            background: var(--color-primary);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: var(--color-secondary);
+            transform: translateY(-2px);
+        }
+
+        #tool-result {
+            margin-top: 30px;
+            min-height: 100px;
+            background: var(--gradient-card);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: var(--shadow-card);
+            word-break: break-word;
+        }
+
+        .palette-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .color-box {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            margin-right: 15px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .color-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .color-info span {
+            font-weight: 500;
+        }
+
+        .color-info small {
+            font-size: 0.85em;
+            color: var(--color-neutral-700);
+        }
+
+        .seo-section {
+            max-width: 900px;
+            margin-top: 60px;
+            padding: 40px;
+            background: var(--gradient-card);
+            border-radius: 20px;
+            box-shadow: var(--shadow-card);
+        }
+
+        .seo-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--color-primary);
+        }
+
+        .seo-section ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .seo-section li {
+            background-color: var(--color-neutral-100);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-inner);
+            font-size: 0.95em;
+            color: var(--color-neutral-700);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: var(--color-neutral-700);
+            font-size: 0.9em;
+            padding-bottom: 20px;
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a.onrender.com">
+    <meta property="og:title" content="Générateur de Palettes de Couleurs Harmonieuses pour Marque">
+    <meta property="og:description" content="Créez des palettes de couleurs professionnelles et attrayantes pour votre identité de marque, vos supports marketing ou vos projets web, basées sur des principes de théorie des couleurs.">
+    <meta property="og:url" content="https://generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Générateur de Palettes de Couleurs Harmonieuses pour Marque", "description": "Créez des palettes de couleurs professionnelles et attrayantes pour votre identité de marque, vos supports marketing ou vos projets web, basées sur des principes de théorie des couleurs.", "url": "https://generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a" data-runtime-mode="palette_generator">
+    <header>
+        <h1>Générateur de Palettes de Couleurs Harmonieuses pour Marque</h1>
+        <p>Cet outil aide les designers, marketeurs et entrepreneurs à choisir des combinaisons de couleurs qui renforcent leur identité visuelle. Créez des palettes professionnelles et attrayantes, basées sur des principes de théorie des couleurs, inspirées par la nature et l'art.</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Composez Votre Harmonie</h2>
+            <p>Définissez le point de départ de votre palette. Un simple clic et observez la magie opérer pour révéler des combinaisons uniques.</p>
+            <form id="tool-form">
+                <div class="form-group">
+                    <label for="baseColor">Couleur de Base (Hex ou Nom)</label>
+                    <input type="text" id="baseColor" value="#8C52FF" placeholder="#RRGGBB ou 'Bleu'" required>
+                </div>
+                <div class="form-group">
+                    <label for="harmonyType">Type d'Harmonie</label>
+                    <select id="harmonyType">
+                        <option value="analogous">Analogues</option>
+                        <option value="monochromatic">Monochromatique</option>
+                        <option value="complementary">Complémentaire</option>
+                        <option value="triadic">Triadique</option>
+                        <option value="split-complementary">Complémentaire scindée</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="saturation">Saturation (%) <span id="saturationValue">50</span></label>
+                    <input type="range" id="saturation" min="0" max="100" value="50">
+                </div>
+                <div class="form-group">
+                    <label for="lightness">Luminosité (%) <span id="lightnessValue">50</span></label>
+                    <input type="range" id="lightness" min="0" max="100" value="50">
+                </div>
+                <button type="submit" id="tool-submit" data-affiliate-slot="generate_palette">Générer la Palette</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Votre Palette Réinventée</h2>
+            <p>Visualisez instantanément des combinaisons chromatiques pertinentes pour votre projet. Adaptez, peaufinez, et laissez votre créativité s'exprimer.</p>
+            <div id="tool-result">
+                <h3 id="result-headline">Palette Générée</h3>
+                <p>Cliquez sur "Générer la Palette" pour découvrir vos couleurs.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="seo-section">
+        <h2>Recherches Fréquentes pour vos Palettes</h2>
+        <ul>
+            <li>Trouver la meilleure palette de couleurs pour un site web en France</li>
+            <li>Comment créer une harmonie de couleurs pour ma marque ?</li>
+            <li>Outil gratuit de génération de couleurs complémentaires</li>
+            <li>Principes de la théorie des couleurs pour le marketing</li>
+            <li>Exemples de palettes de couleurs naturelles et artistiques</li>
+            <li>Choisir des couleurs qui renforcent l'identité visuelle</li>
+            <li>Logiciel de création de thèmes de couleurs modernes</li>
+            <li>Idées de combinaisons de couleurs pour logo d'entreprise</li>
+            <li>Signification des couleurs dans le design graphique français</li>
+            <li>Générateur de codes couleurs hexadécimaux et RVB</li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2023 Harmonie Créative. Tous droits réservés.
+    </footer>
+
+    <script>
+        function hexToRgb(hex) {
+            var r = parseInt(hex.substring(1, 3), 16);
+            var g = parseInt(hex.substring(3, 5), 16);
+            var b = parseInt(hex.substring(5, 7), 16);
+            return { r, g, b };
+        }
+
+        function rgbToHsl(r, g, b) {
+            r /= 255; g /= 255; b /= 255;
+            var max = Math.max(r, g, b), min = Math.min(r, g, b);
+            var h, s, l = (max + min) / 2;
+
+            if (max === min) {
+                h = s = 0; // achromatic
+            } else {
+                var d = max - min;
+                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                switch (max) {
+                    case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                    case g: h = (b - r) / d + 2; break;
+                    case b: h = (r - g) / d + 4; break;
+                }
+                h /= 6;
+            }
+            return { h: h * 360, s: s * 100, l: l * 100 };
+        }
+
+        function hslToRgb(h, s, l) {
+            s /= 100;
+            l /= 100;
+            var c = (1 - Math.abs(2 * l - 1)) * s,
+                x = c * (1 - Math.abs((h / 60) % 2 - 1)),
+                m = l - c / 2,
+                r = 0,
+                g = 0,
+                b = 0;
+
+            if (0 <= h && h < 60) {
+                r = c; g = x; b = 0;
+            } else if (60 <= h && h < 120) {
+                r = x; g = c; b = 0;
+            } else if (120 <= h && h < 180) {
+                r = 0; g = c; b = x;
+            } else if (180 <= h && h < 240) {
+                r = 0; g = x; b = c;
+            } else if (240 <= h && h < 300) {
+                r = x; g = 0; b = c;
+            } else if (300 <= h && h < 360) {
+                r = c; g = 0; b = x;
+            }
+            r = Math.round((r + m) * 255);
+            g = Math.round((g + m) * 255);
+            b = Math.round((b + m) * 255);
+
+            return { r, g, b };
+        }
+
+        function rgbToHex(r, g, b) {
+            return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
+        }
+
+        // Basic color name to hex mapping (can be expanded)
+        const colorNames = {
+            "rouge": "#FF0000", "vert": "#00FF00", "bleu": "#0000FF", "jaune": "#FFFF00",
+            "cyan": "#00FFFF", "magenta": "#FF00FF", "blanc": "#FFFFFF", "noir": "#000000",
+            "orange": "#FFA500", "violet": "#800080", "rose": "#FFC0CB", "marron": "#A52A2A",
+            "gris": "#808080"
+        };
+
+        function getColorFromInput(input) {
+            let color = input.trim();
+            if (color.startsWith("#") && color.length === 7) {
+                return hexToRgb(color);
+            } else if (colorNames[color.toLowerCase()]) {
+                return hexToRgb(colorNames[color.toLowerCase()]);
+            }
+            // Default to a safe color if invalid or unknown
+            return { r: 140, g: 82, b: 255 }; // Default to primary color hex #8C52FF
+        }
+
+        function generatePalette(baseColorRgb, type, saturation, lightness) {
+            let { h, s, l } = rgbToHsl(baseColorRgb.r, baseColorRgb.g, baseColorRgb.b);
+            let colors = [];
+
+            // Apply global saturation and lightness adjustments from sliders
+            s = saturation;
+            l = lightness;
+
+            const baseHsl = { h, s, l };
+            colors.push(baseHsl);
+
+            switch (type) {
+                case 'monochromatic':
+                    // Variations in lightness
+                    colors.push({ h: h, s: s, l: Math.max(0, l - 20) });
+                    colors.push({ h: h, s: s, l: Math.min(100, l + 20) });
+                    colors.push({ h: h, s: Math.max(0, s - 20), l: l }); // Desaturated
+                    colors.push({ h: h, s: Math.min(100, s + 20), l: l }); // More saturated
+                    break;
+                case 'analogous':
+                    colors.push({ h: (h + 30) % 360, s: s, l: l });
+                    colors.push({ h: (h - 30 + 360) % 360, s: s, l: l });
+                    colors.push({ h: (h + 60) % 360, s: s, l: Math.min(100, l + 10) });
+                    colors.push({ h: (h - 60 + 360) % 360, s: s, l: Math.max(0, l - 10) });
+                    break;
+                case 'complementary':
+                    colors.push({ h: (h + 180) % 360, s: s, l: l });
+                    colors.push({ h: h, s: s, l: Math.max(0, l - 20) });
+                    colors.push({ h: (h + 180) % 360, s: s, l: Math.min(100, l + 20) });
+                    colors.push({ h: h, s: Math.min(100, s + 20), l: l });
+                    break;
+                case 'triadic':
+                    colors.push({ h: (h + 120) % 360, s: s, l: l });
+                    colors.push({ h: (h + 240) % 360, s: s, l: l });
+                    colors.push({ h: h, s: Math.max(0, s - 15), l: Math.min(100, l + 15) }); // Variation
+                    colors.push({ h: (h + 120) % 360, s: s, l: Math.max(0, l - 15) }); // Variation
+                    break;
+                case 'split-complementary':
+                    colors.push({ h: (h + 150) % 360, s: s, l: l });
+                    colors.push({ h: (h + 210) % 360, s: s, l: l });
+                    colors.push({ h: h, s: Math.min(100, s + 10), l: l });
+                    colors.push({ h: (h + 150) % 360, s: s, l: Math.max(0, l - 10) });
+                    break;
+            }
+
+            // Ensure unique colors and convert back to RGB then Hex
+            const uniqueColors = Array.from(new Set(colors.map(c => JSON.stringify(c))))
+                                    .map(s => JSON.parse(s));
+
+            return uniqueColors.slice(0, 5).map(c => { // Limit to 5 colors for a compact palette
+                const { r, g, b } = hslToRgb(c.h, c.s, c.l);
+                return {
+                    hex: rgbToHex(r, g, b),
+                    rgb: `rgb(${r}, ${g}, ${b})`,
+                    hsl: `hsl(${Math.round(c.h)}, ${Math.round(c.s)}%, ${Math.round(c.l)}%)`
+                };
+            });
+        }
+
+
+        document.getElementById('tool-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const baseColorInput = document.getElementById('baseColor').value;
+            const harmonyType = document.getElementById('harmonyType').value;
+            const saturation = parseInt(document.getElementById('saturation').value);
+            const lightness = parseInt(document.getElementById('lightness').value);
+
+            const baseRgb = getColorFromInput(baseColorInput);
+            const palette = generatePalette(baseRgb, harmonyType, saturation, lightness);
+
+            const resultDiv = document.getElementById('tool-result');
+            let html = '<h3>Votre Palette Personnalisée</h3>';
+            palette.forEach(color => {
+                html += `
+                    <div class="palette-item">
+                        <div class="color-box" style="background-color: ${color.hex};"></div>
+                        <div class="color-info">
+                            <span>${color.hex}</span>
+                            <small>${color.rgb} / ${color.hsl}</small>
+                        </div>
+                    </div>
+                `;
+            });
+            resultDiv.innerHTML = html;
+        });
+
+        // Update slider values
+        document.getElementById('saturation').addEventListener('input', function() {
+            document.getElementById('saturationValue').textContent = this.value;
+        });
+        document.getElementById('lightness').addEventListener('input', function() {
+            document.getElementById('lightnessValue').textContent = this.value;
+        });
+
+        // Initial generation on load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('tool-submit').click();
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.setAttribute("rel", "nofollow sponsored noopener noreferrer");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank", "noopener");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (tag === "select") {
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      field.value = sampleNumber(field);
+      return;
+    }
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    form.querySelectorAll("input, select, textarea").forEach(applySample);
+    const blocker = function (event) {
+      event.preventDefault();
+    };
+    form.addEventListener("submit", blocker, { capture: true, once: true });
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+    inspectResult(before, 6);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
