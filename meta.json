@@ -11,17 +11,17 @@
   "country": "FR",
   "url": null,
   "expected_url": "https://generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a.onrender.com",
-  "created": "2026-04-07T01:03:00.614151+00:00",
+  "created": "2026-04-07T12:54:58.022216+00:00",
   "owner_user_id": "user-1774822953462",
   "owner_username": "admin",
   "owner_display_name": "Administrator",
   "status": "generated",
-  "run_id": "run-1775523691751",
+  "run_id": "run-1775566497060",
   "publish_target": "render",
   "mode": "production",
   "source_type": "imported",
-  "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1775523363859/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
-  "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1775523363859/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
+  "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1775566431511/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
+  "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1775566431511/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
   "import_resolution_note": null,
   "analysis": {
     "model": "preserved-analysis",
@@ -64,6 +64,42 @@
         "summary": "A safer anchor-text fallback was applied as a compact contextual block near the bottom of the page.",
         "issues": []
       }
+    },
+    "content": {
+      "status": "ready",
+      "updated_at": "2026-04-07T12:54:37.083527+00:00",
+      "article_count": 2,
+      "anchor_article_count": 0,
+      "plain_url_article_count": 2,
+      "batch_anchor_article_count": 0,
+      "batch_plain_url_article_count": 2,
+      "total_batch_articles": 2,
+      "links": 1,
+      "anchor_keywords": [
+        "roobet casino",
+        "roobet"
+      ],
+      "section_title": "Ressources complémentaires",
+      "pages": [
+        {
+          "slug": "generateur-de-palettes-de-couleurs-harmonieuses-28506dab",
+          "path": "/var/lib/utility-site-studio/sites/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/insights/generateur-de-palettes-de-couleurs-harmonieuses-28506dab.html",
+          "title": "Générateur de Palettes de Couleurs Harmonieuses pour Marque — Guide 1",
+          "link_mode": "plain_url_text"
+        },
+        {
+          "slug": "generateur-de-palettes-de-couleurs-harmonieuses-c8ec7fcf",
+          "path": "/var/lib/utility-site-studio/sites/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/insights/generateur-de-palettes-de-couleurs-harmonieuses-c8ec7fcf.html",
+          "title": "Générateur de Palettes de Couleurs Harmonieuses pour Marque — Guide 2",
+          "link_mode": "plain_url_text"
+        }
+      ],
+      "review": {
+        "status": "pass",
+        "score": 82,
+        "summary": "A safer fallback content bundle was applied with clean supporting pages and a restrained homepage knowledge section.",
+        "issues": []
+      }
     }
   },
   "ahrefs": {
@@ -104,7 +140,7 @@
       "status": "published",
       "repo_name": "generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
       "repo_url": "https://github.com/olivkovyi/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
-      "updated_at": 1775077352
+      "updated_at": 1775523822
     },
     "deployment": {
       "status": "ready",
@@ -112,16 +148,16 @@
       "service_id": "srv-d76ogeaa214c739dtgt0",
       "project_name": "generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
       "requested_project_name": null,
-      "deployment_id": "dep-d76ogf2a214c739dthcg",
+      "deployment_id": "dep-d7a5gh2a214c73bifrgg",
       "deployment_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
       "public_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
       "expected_public_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
       "dashboard_url": "https://dashboard.render.com/static/srv-d76ogeaa214c739dtgt0",
       "ready_state": "live",
       "target": "production",
-      "updated_at": 1775077384,
-      "url_source": "alias",
-      "requested_public_url": "https://generateur-de-palettes-de-couleurs.onrender.com"
+      "updated_at": 1775523861,
+      "requested_public_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
+      "url_source": "alias"
     },
     "qa": {
       "status": "pass",
@@ -194,38 +230,38 @@
             "detail": "Editorial desktop layout avoids negative overlap offsets on the tool panel"
           }
         ],
-        "checked_at": 1775523612
+        "checked_at": 1775566477
       },
       "functional": {
         "status": "pass",
         "detail": "desktop: Le formulaire natif a mis a jour la zone de resultat. | mobile: Le formulaire natif a mis a jour la zone de resultat.",
-        "target_url": "http://127.0.0.1:34357/index.html?__qa=functional",
+        "target_url": "http://127.0.0.1:46495/index.html?__qa=functional",
         "mode": "native-form",
         "headline": "Votre Palette Personnalisée",
         "primary_url": "",
         "desktop": {
           "status": "pass",
           "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:34357/index.html?__qa=functional",
+          "target_url": "http://127.0.0.1:46495/index.html?__qa=functional",
           "viewport": "desktop",
           "mode": "native-form",
           "headline": "Votre Palette Personnalisée",
           "primary_url": "",
           "reported_viewport": "desktop",
-          "updated_at": 1775523612
+          "updated_at": 1775566478
         },
         "mobile": {
           "status": "pass",
           "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:34357/index.html?__qa=functional",
+          "target_url": "http://127.0.0.1:46495/index.html?__qa=functional",
           "viewport": "mobile",
           "mode": "native-form",
           "headline": "Votre Palette Personnalisée",
           "primary_url": "",
           "reported_viewport": "mobile",
-          "updated_at": 1775523613
+          "updated_at": 1775566479
         },
-        "updated_at": 1775523613
+        "updated_at": 1775566479
       },
       "remote": {
         "status": "pass",
@@ -246,7 +282,7 @@
             "detail": "Remote HTML contains a body tag"
           }
         ],
-        "checked_at": 1775523629
+        "checked_at": 1775566479
       },
       "visual": {
         "status": "pass",
@@ -262,21 +298,21 @@
           "detail": "430x932 screenshot captured.",
           "relative_url": "/static/generated-qa/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-mobile.png"
         },
-        "updated_at": 1775523632
+        "updated_at": 1775566482
       },
       "lighthouse": {
         "status": "pass",
         "scores": {
-          "performance": 89,
-          "accessibility": 93,
+          "performance": 100,
+          "accessibility": 94,
           "best-practices": 96,
-          "seo": 92
+          "seo": 100
         },
         "report_path": "/var/lib/utility-site-studio/data/qa/lighthouse/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-lighthouse.json",
-        "updated_at": 1775523682
+        "updated_at": 1775566496
       },
       "qa_live_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
-      "updated_at": "2026-04-07T01:01:22.773872+00:00"
+      "updated_at": "2026-04-07T12:54:56.923148+00:00"
     }
   }
 }
