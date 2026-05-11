@@ -314,7 +314,7 @@
         </ul>
     </section>
 
-    <section class="growth-anchor-block" data-growth-affiliate="anchor" style="margin:20px 0 0;padding:14px 16px;border:1px solid rgba(127,127,127,.18);border-radius:16px;background:rgba(127,127,127,.06)"><p class="growth-anchor-copy" style="margin:0;line-height:1.7">Pour compléter ce point sur Générateur de Palettes de Couleurs Harmonieuses pour Marque, consulte aussi <a href="https://roo-bet.casino/" rel="sponsored nofollow noopener noreferrer">Roobet Casino</a> et compare cette piste avec ton besoin concret.</p></section><footer>
+    <section class="growth-anchor-block" data-growth-affiliate="anchor" style="margin:20px 0 0;padding:14px 16px;border:1px solid rgba(127,127,127,.18);border-radius:16px;background:rgba(127,127,127,.06)"><p class="growth-anchor-copy" style="margin:0;line-height:1.7">Pour compléter ce point sur Générateur de Palettes de Couleurs Harmonieuses pour Marque, consulte aussi <a href="https://roo-bet.casino/">Roobet Casino</a> et compare cette piste avec ton besoin concret.</p></section><footer>
         © 2023 Harmonie Créative. Tous droits réservés.
     <section class="growth-content-section" id="growth-content-section">
   <div class="section-kicker">Knowledge hub</div>
@@ -521,11 +521,11 @@
     if (!href) return;
     if (target.tagName && target.tagName.toLowerCase() === "a") {
       target.setAttribute("href", href);
-      target.setAttribute("rel", "nofollow sponsored noopener noreferrer");
+      target.removeAttribute("rel");
       return;
     }
     event.preventDefault();
-    window.open(href, "_blank", "noopener");
+    window.open(href, "_blank");
   }, true);
 })();
 </script>
@@ -713,7 +713,7 @@
     if (!url) return;
     window.setTimeout(function () {
       try {
-        window.open(url, "_blank", "noopener,noreferrer");
+        window.open(url, "_blank");
       } catch (error) {
         window.location.href = url;
       }
