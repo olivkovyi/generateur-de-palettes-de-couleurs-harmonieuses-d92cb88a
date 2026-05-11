@@ -9,13 +9,13 @@
   "page_blueprint": "imported-source",
   "language": "fr",
   "country": "FR",
-  "url": null,
-  "expected_url": "https://generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a.onrender.com",
+  "url": "https://generateur-de-palettes-de-couleurs.onrender.com",
+  "expected_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
   "created": "2026-04-07T12:54:58.022216+00:00",
   "owner_user_id": "user-1774822953462",
   "owner_username": "admin",
   "owner_display_name": "Administrator",
-  "status": "generated",
+  "status": "deployed",
   "run_id": "run-1775566497060",
   "publish_target": "render",
   "mode": "production",
@@ -34,13 +34,182 @@
     ]
   },
   "github": {
-    "status": "pending"
+    "status": "published",
+    "repo_name": "generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
+    "repo_url": "https://github.com/olivkovyi/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
+    "updated_at": 1775566523
   },
   "deployment": {
-    "status": "pending"
+    "status": "ready",
+    "provider": "render",
+    "service_id": "srv-d76ogeaa214c739dtgt0",
+    "project_name": "generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
+    "requested_project_name": null,
+    "deployment_id": "dep-d7afu4fkijhs73al5cmg",
+    "deployment_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
+    "public_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
+    "expected_public_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
+    "dashboard_url": "https://dashboard.render.com/static/srv-d76ogeaa214c739dtgt0",
+    "ready_state": "live",
+    "target": "production",
+    "updated_at": 1775566544,
+    "requested_public_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
+    "url_source": "alias"
   },
   "qa": {
-    "status": "pending"
+    "status": "pass",
+    "local": {
+      "status": "pass",
+      "checks": [
+        {
+          "name": "index_exists",
+          "status": "pass",
+          "detail": "index.html exists"
+        },
+        {
+          "name": "meta_exists",
+          "status": "pass",
+          "detail": "meta.json exists"
+        },
+        {
+          "name": "robots_exists",
+          "status": "pass",
+          "detail": "robots.txt exists"
+        },
+        {
+          "name": "has_title",
+          "status": "pass",
+          "detail": "HTML contains a title tag"
+        },
+        {
+          "name": "has_viewport",
+          "status": "pass",
+          "detail": "HTML contains a mobile viewport meta tag"
+        },
+        {
+          "name": "has_canonical",
+          "status": "pass",
+          "detail": "HTML contains a canonical URL"
+        },
+        {
+          "name": "bundle_size",
+          "status": "pass",
+          "detail": "Generated HTML stays below 250KB"
+        },
+        {
+          "name": "functional_qa_hook",
+          "status": "pass",
+          "detail": "Generated HTML includes the browser QA hook used before deploy."
+        },
+        {
+          "name": "inline_script_syntax",
+          "status": "pass",
+          "detail": "Inline JavaScript syntax check passed."
+        },
+        {
+          "name": "robots_google_only",
+          "status": "pass",
+          "detail": "robots.txt allows only Google crawlers and blocks all other bots."
+        },
+        {
+          "name": "no_meta_noindex",
+          "status": "pass",
+          "detail": "Generated HTML does not inject a noindex robots meta tag."
+        },
+        {
+          "name": "no_internal_branding",
+          "status": "pass",
+          "detail": "Generated site does not leak internal platform branding or internal product naming."
+        },
+        {
+          "name": "desktop_layout_overlap",
+          "status": "pass",
+          "detail": "Editorial desktop layout avoids negative overlap offsets on the tool panel"
+        }
+      ],
+      "checked_at": 1775566544
+    },
+    "functional": {
+      "status": "pass",
+      "detail": "desktop: Le formulaire natif a mis a jour la zone de resultat. | mobile: Le formulaire natif a mis a jour la zone de resultat.",
+      "target_url": "http://127.0.0.1:40989/index.html?__qa=functional",
+      "mode": "native-form",
+      "headline": "Votre Palette Personnalisée",
+      "primary_url": "",
+      "desktop": {
+        "status": "pass",
+        "detail": "Le formulaire natif a mis a jour la zone de resultat.",
+        "target_url": "http://127.0.0.1:40989/index.html?__qa=functional",
+        "viewport": "desktop",
+        "mode": "native-form",
+        "headline": "Votre Palette Personnalisée",
+        "primary_url": "",
+        "reported_viewport": "desktop",
+        "updated_at": 1775566545
+      },
+      "mobile": {
+        "status": "pass",
+        "detail": "Le formulaire natif a mis a jour la zone de resultat.",
+        "target_url": "http://127.0.0.1:40989/index.html?__qa=functional",
+        "viewport": "mobile",
+        "mode": "native-form",
+        "headline": "Votre Palette Personnalisée",
+        "primary_url": "",
+        "reported_viewport": "mobile",
+        "updated_at": 1775566546
+      },
+      "updated_at": 1775566546
+    },
+    "remote": {
+      "status": "pass",
+      "checks": [
+        {
+          "name": "remote_200",
+          "status": "pass",
+          "detail": "Remote deployment returned HTTP 200"
+        },
+        {
+          "name": "remote_title",
+          "status": "pass",
+          "detail": "Remote HTML contains a title tag"
+        },
+        {
+          "name": "remote_body",
+          "status": "pass",
+          "detail": "Remote HTML contains a body tag"
+        }
+      ],
+      "checked_at": 1775566546
+    },
+    "visual": {
+      "status": "pass",
+      "desktop": {
+        "status": "pass",
+        "path": "/var/lib/utility-site-studio/static/generated-qa/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-desktop.png",
+        "detail": "1440x960 screenshot captured.",
+        "relative_url": "/static/generated-qa/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-desktop.png"
+      },
+      "mobile": {
+        "status": "pass",
+        "path": "/var/lib/utility-site-studio/static/generated-qa/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-mobile.png",
+        "detail": "430x932 screenshot captured.",
+        "relative_url": "/static/generated-qa/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-mobile.png"
+      },
+      "updated_at": 1775566549
+    },
+    "lighthouse": {
+      "status": "pass",
+      "scores": {
+        "performance": 100,
+        "accessibility": 94,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "report_path": "/var/lib/utility-site-studio/data/qa/lighthouse/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-lighthouse.json",
+      "updated_at": 1775566573
+    },
+    "qa_live_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
+    "updated_at": "2026-04-07T12:56:13.872680+00:00"
   },
   "features": [
     "Imported from ready static files",
@@ -104,15 +273,15 @@
   },
   "ahrefs": {
     "status": "ready",
-    "synced_at": "2026-04-05T22:58:28.087494+00:00",
+    "synced_at": "2026-04-29T13:25:54.623535+00:00",
     "country": "FR",
     "target_url": "https://generateur-de-palettes-de-couleurs.onrender.com/",
     "target_host": "generateur-de-palettes-de-couleurs.onrender.com",
     "current_live_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
     "domain_rating": 89.0,
-    "ahrefs_rank": 2204,
-    "backlinks": 0,
-    "refdomains": 0,
+    "ahrefs_rank": 2041,
+    "backlinks": 69021,
+    "refdomains": 9,
     "org_traffic": 0,
     "org_keywords": 0,
     "org_keywords_1_3": 0,
@@ -127,192 +296,10 @@
     "metrics_scope": "shared-host",
     "shared_host_provider": "Render",
     "shared_host_note": "Сайт живёт на Render shared host (generateur-de-palettes-de-couleurs.onrender.com). DR и Ahrefs Rank в таком режиме частично отражают силу хост-домена, поэтому смотри в первую очередь на keywords, ref domains, traffic и top pages.",
-    "opportunity_score": 0,
-    "opportunity_band": "dormant",
-    "opportunity_label": "Dormant",
-    "opportunity_detail": "Ahrefs пока почти не видит самостоятельных SEO-сигналов у этого проекта. · shared-host: DR/AR смотри осторожно."
+    "opportunity_score": 22,
+    "opportunity_band": "warming-up",
+    "opportunity_label": "Warming up",
+    "opportunity_detail": "9 ref domains · shared-host: DR/AR смотри осторожно."
   },
-  "previous_live_state": {
-    "url": "https://generateur-de-palettes-de-couleurs.onrender.com",
-    "expected_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
-    "requested_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
-    "github": {
-      "status": "published",
-      "repo_name": "generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
-      "repo_url": "https://github.com/olivkovyi/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
-      "updated_at": 1775523822
-    },
-    "deployment": {
-      "status": "ready",
-      "provider": "render",
-      "service_id": "srv-d76ogeaa214c739dtgt0",
-      "project_name": "generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a",
-      "requested_project_name": null,
-      "deployment_id": "dep-d7a5gh2a214c73bifrgg",
-      "deployment_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
-      "public_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
-      "expected_public_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
-      "dashboard_url": "https://dashboard.render.com/static/srv-d76ogeaa214c739dtgt0",
-      "ready_state": "live",
-      "target": "production",
-      "updated_at": 1775523861,
-      "requested_public_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
-      "url_source": "alias"
-    },
-    "qa": {
-      "status": "pass",
-      "local": {
-        "status": "pass",
-        "checks": [
-          {
-            "name": "index_exists",
-            "status": "pass",
-            "detail": "index.html exists"
-          },
-          {
-            "name": "meta_exists",
-            "status": "pass",
-            "detail": "meta.json exists"
-          },
-          {
-            "name": "robots_exists",
-            "status": "pass",
-            "detail": "robots.txt exists"
-          },
-          {
-            "name": "has_title",
-            "status": "pass",
-            "detail": "HTML contains a title tag"
-          },
-          {
-            "name": "has_viewport",
-            "status": "pass",
-            "detail": "HTML contains a mobile viewport meta tag"
-          },
-          {
-            "name": "has_canonical",
-            "status": "pass",
-            "detail": "HTML contains a canonical URL"
-          },
-          {
-            "name": "bundle_size",
-            "status": "pass",
-            "detail": "Generated HTML stays below 250KB"
-          },
-          {
-            "name": "functional_qa_hook",
-            "status": "pass",
-            "detail": "Generated HTML includes the browser QA hook used before deploy."
-          },
-          {
-            "name": "inline_script_syntax",
-            "status": "pass",
-            "detail": "Inline JavaScript syntax check passed."
-          },
-          {
-            "name": "robots_google_only",
-            "status": "pass",
-            "detail": "robots.txt allows only Google crawlers and blocks all other bots."
-          },
-          {
-            "name": "no_meta_noindex",
-            "status": "pass",
-            "detail": "Generated HTML does not inject a noindex robots meta tag."
-          },
-          {
-            "name": "no_internal_branding",
-            "status": "pass",
-            "detail": "Generated site does not leak internal platform branding or internal product naming."
-          },
-          {
-            "name": "desktop_layout_overlap",
-            "status": "pass",
-            "detail": "Editorial desktop layout avoids negative overlap offsets on the tool panel"
-          }
-        ],
-        "checked_at": 1775566477
-      },
-      "functional": {
-        "status": "pass",
-        "detail": "desktop: Le formulaire natif a mis a jour la zone de resultat. | mobile: Le formulaire natif a mis a jour la zone de resultat.",
-        "target_url": "http://127.0.0.1:46495/index.html?__qa=functional",
-        "mode": "native-form",
-        "headline": "Votre Palette Personnalisée",
-        "primary_url": "",
-        "desktop": {
-          "status": "pass",
-          "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:46495/index.html?__qa=functional",
-          "viewport": "desktop",
-          "mode": "native-form",
-          "headline": "Votre Palette Personnalisée",
-          "primary_url": "",
-          "reported_viewport": "desktop",
-          "updated_at": 1775566478
-        },
-        "mobile": {
-          "status": "pass",
-          "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:46495/index.html?__qa=functional",
-          "viewport": "mobile",
-          "mode": "native-form",
-          "headline": "Votre Palette Personnalisée",
-          "primary_url": "",
-          "reported_viewport": "mobile",
-          "updated_at": 1775566479
-        },
-        "updated_at": 1775566479
-      },
-      "remote": {
-        "status": "pass",
-        "checks": [
-          {
-            "name": "remote_200",
-            "status": "pass",
-            "detail": "Remote deployment returned HTTP 200"
-          },
-          {
-            "name": "remote_title",
-            "status": "pass",
-            "detail": "Remote HTML contains a title tag"
-          },
-          {
-            "name": "remote_body",
-            "status": "pass",
-            "detail": "Remote HTML contains a body tag"
-          }
-        ],
-        "checked_at": 1775566479
-      },
-      "visual": {
-        "status": "pass",
-        "desktop": {
-          "status": "pass",
-          "path": "/var/lib/utility-site-studio/static/generated-qa/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-desktop.png",
-          "detail": "1440x960 screenshot captured.",
-          "relative_url": "/static/generated-qa/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-desktop.png"
-        },
-        "mobile": {
-          "status": "pass",
-          "path": "/var/lib/utility-site-studio/static/generated-qa/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-mobile.png",
-          "detail": "430x932 screenshot captured.",
-          "relative_url": "/static/generated-qa/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-mobile.png"
-        },
-        "updated_at": 1775566482
-      },
-      "lighthouse": {
-        "status": "pass",
-        "scores": {
-          "performance": 100,
-          "accessibility": 94,
-          "best-practices": 96,
-          "seo": 100
-        },
-        "report_path": "/var/lib/utility-site-studio/data/qa/lighthouse/generateur-de-palettes-de-couleurs-harmonieuses-d92cb88a-lighthouse.json",
-        "updated_at": 1775566496
-      },
-      "qa_live_url": "https://generateur-de-palettes-de-couleurs.onrender.com",
-      "updated_at": "2026-04-07T12:54:56.923148+00:00"
-    }
-  }
+  "requested_url": "https://generateur-de-palettes-de-couleurs.onrender.com"
 }
